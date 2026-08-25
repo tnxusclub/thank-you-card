@@ -12,22 +12,22 @@
             font-family: 'Segoe UI', sans-serif;
         }
 
-        body {
-            min-height: 100vh;
-            /* ==============================================
-               🔑 PASTIKAN NAMA FILE SAMA PERSIS!
-               Contoh: background.jpeg, foto-bg.jpeg
-               HURUF BESAR/KECIL PENGARUH!
-               ============================================== */
-            background: url('background.jpeg') no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            color: white;
-        }
+       body {
+  min-height: 100vh;
+  width: 100%;
+  /* Link gambar pakai .jpeg */
+  background: url('background.jpeg') no-repeat center center fixed;
+  background-size: cover; /* PENTING: menutupi seluruh layar tanpa distorsi */
+  background-attachment: fixed; /* Latar diam saat digulir */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
 
         body::before {
             content: '';
